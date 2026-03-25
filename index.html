@@ -35,53 +35,41 @@
             </div>
         </div>
 
-        <!-- QUESTION SCREEN -->
+        <!-- STACK PICKER SCREEN (STEP 1) -->
+        <div id="screen-stack" class="screen">
+            <div class="stack-picker-container">
+                <div class="pillar-tag" style="background:rgba(244,114,182,0.12);color:var(--pink)">Step 1 of 3</div>
+                <h2 class="question-text">First — what's in your martech toolbox?</h2>
+                <p class="stack-subtitle">Tap everything you use or pay for. This shapes your entire diagnosis.</p>
+                <div id="stack-categories"></div>
+                <div class="stack-selected-bar" id="stack-selected-bar">
+                    <span id="stack-count">0 selected</span>
+                </div>
+                <button class="btn-primary stack-next-btn" id="stack-next-btn" onclick="submitStack()" disabled>Next →</button>
+            </div>
+        </div>
+
+        <!-- ROLE PICKER (STEP 2) -->
+        <div id="screen-role" class="screen">
+            <div class="question-container">
+                <div class="pillar-tag" style="background:rgba(52,211,153,0.12);color:var(--green)">Step 2 of 3</div>
+                <h2 class="question-text">What's your role?</h2>
+                <div class="options-container" id="role-options"></div>
+            </div>
+        </div>
+
+        <!-- DYNAMIC QUESTIONS (STEP 3) -->
         <div id="screen-question" class="screen">
             <div class="question-container">
                 <div class="progress-bar-wrapper">
                     <div class="progress-bar">
                         <div id="progress-fill" class="progress-fill"></div>
                     </div>
-                    <span id="progress-text" class="progress-text">1 / 15</span>
+                    <span id="progress-text" class="progress-text"></span>
                 </div>
                 <div class="pillar-tag" id="pillar-tag"></div>
                 <h2 id="question-text" class="question-text"></h2>
                 <div id="options-container" class="options-container"></div>
-            </div>
-        </div>
-
-        <!-- STACK PICKER SCREEN -->
-        <div id="screen-stack" class="screen">
-            <div class="stack-picker-container">
-                <div class="progress-bar-wrapper">
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width:90%"></div>
-                    </div>
-                    <span class="progress-text">14 / 15</span>
-                </div>
-                <div class="pillar-tag" style="background:rgba(244,114,182,0.12);color:var(--pink)">Your Stack</div>
-                <h2 class="question-text">What's in your martech toolbox?</h2>
-                <p class="stack-subtitle">Tap everything you use or pay for. No judgment. (Okay, some judgment.)</p>
-                <div id="stack-categories"></div>
-                <div class="stack-selected-bar" id="stack-selected-bar">
-                    <span id="stack-count">0 selected</span>
-                </div>
-                <button class="btn-primary stack-next-btn" id="stack-next-btn" onclick="submitStack()" disabled>Show Me the Damage →</button>
-            </div>
-        </div>
-
-        <!-- ROLE PICKER SCREEN -->
-        <div id="screen-role" class="screen">
-            <div class="question-container">
-                <div class="progress-bar-wrapper">
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width:100%"></div>
-                    </div>
-                    <span class="progress-text">15 / 15</span>
-                </div>
-                <div class="pillar-tag" style="background:rgba(52,211,153,0.12);color:var(--green)">Almost Done</div>
-                <h2 class="question-text">Last one — what's your role?</h2>
-                <div class="options-container" id="role-options"></div>
             </div>
         </div>
 
